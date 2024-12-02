@@ -1,0 +1,87 @@
+/* Fade-in Background Animation */
+@keyframes fadeInBackground {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+.fade-in-background {
+  animation: fadeInBackground 3s ease-in-out forwards;
+}
+
+/* Text Animation: Slide Up and Fade In */
+@keyframes slideUpFadeIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fancy-text span {
+  opacity: 0;
+  animation: slideUpFadeIn 1.3s ease-in-out 0.8s forwards;
+}
+
+/* Rectangle Animation */
+@keyframes drawRectangle {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  50% {
+    width: 112%;
+    height: 0%
+  }
+  100% {
+    width: 112%;
+    height: 124%;
+  }
+}
+
+.animated-rectangle {
+  animation: drawRectangle 1.3s ease-in-out forwards;
+  opacity: 1;
+  box-sizing: border-box;
+}
+
+/* Subtext Animation */
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.subtext {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  opacity: 0;
+  animation: fadeInText 1s ease-in-out forwards;
+}
+
+.subtext:nth-child(1) {
+  animation-delay: 1.2s;
+}
+
+.subtext:nth-child(2) {
+  animation-delay: 1.5s;
+}
+
+.subtext:nth-child(3) {
+  animation-delay: 1.8s;
+}
+
+.subtext:nth-child(4) {
+  animation-delay: 2.1s;
+}
