@@ -33,9 +33,9 @@ export class AppComponent implements OnInit {
       observer.observe(element);
     });
 
-
-
   }
+
+
 
 
 

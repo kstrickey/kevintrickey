@@ -19,6 +19,18 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({addUtilities}) {
+      addUtilities({
+        '.zoomable': {
+          transition: 'transform 0.3s',
+          transform: 'scale(1)',
+          '&:hover': {
+            transform: 'scale(1.05)',
+          },
+        }
+      })
+    }
+  ],
 }
 

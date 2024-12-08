@@ -8,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  scrollToSecondScreen() {
+    const element = document.getElementById('second-screen');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+  
 }
