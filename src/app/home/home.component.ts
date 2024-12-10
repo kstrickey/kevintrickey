@@ -15,8 +15,8 @@ export class HomeComponent {
     }
   }
 
-  navigateToNYT() {
-    window.open('https://www.nytimes.com/2022/03/24/crosswords/all-in-the-game-of-love.html', '_blank')
+  navigateToCrossworthy() {
+    window.open('crossworthy.net', '_blank')
   }
 
   navigateToNPR() {
