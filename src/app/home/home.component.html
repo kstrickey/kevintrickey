@@ -47,39 +47,65 @@
             <p class="mt-2 text-gray-200 text-sm md:text-base">
               Developer, scientific data guy, creator of crossworthy.net. I'm after creative angles on big problems!
             </p>
-            <button class="mt-4 px-6 py-2 bg-white text-olive font-semibold rounded hover:bg-gray-300">
-              Resume
-            </button>
+            <div class="flex items-center space-x-4 mt-4">
+              <a href="/kevin-trickey-resume.pdf" download="Kevin_Trickey_Resume.pdf">
+                <button class="px-6 py-2 bg-white text-olive font-semibold rounded hover:bg-gray-300">
+                  Resume
+                </button>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/kevin-trickey/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-white py-2 hover:underline"
+              >
+                LinkedIn
+              </a>
+            </div>
           </div>
         </div>
     
         <!-- 3 highlights -->
+        <div>
+          Here are some articles featuring my work:
+        </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Crossworthy -->
-          <div class="flex flex-col items-center text-center scroll-animate">
-            <div class="w-full h-48 bg-[url('/images/crossworthy-article.png')] bg-cover bg-top rounded"></div>
-            <h2 class="mt-4 text-lg font-semibold">Play a <strong><em>Crossworthy</em> crossword</strong></h2>
+          <div class="flex flex-col items-start text-left scroll-animate">
+            <div
+              class="w-full h-48 bg-[url('/images/crossworthy-article.png')] bg-cover bg-top rounded cursor-pointer zoomable"
+              (click)="navigateToNYT()"
+            >
+            </div>
+            <h2 class="mt-4 text-lg font-semibold">
+              <a 
+                href="https://www.crossworthy.net"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center hover:underline cursor-pointer"
+              >
+                <em>Crossworthy.net</em>
+                <i class="fas fa-external-link-alt ml-3 text-sm"></i>
+              </a>
+            </h2>
             <p class="mt-1 text-sm text-gray-300">
-              My website <strong>crossworthy.net</strong> lets you create and solve professional-grade crossword puzzles.
-              Start by playing one of mine!
+              is my biggest project&mdash;join me and 10,000+ crossword solvers and constructors!
             </p>
           </div>
           <!-- Cultivated Meat -->
-          <div class="flex flex-col items-center text-center scroll-animate">
-            <div class="w-full h-48 bg-[url('/images/upside-article.png')] bg-cover bg-top rounded"></div>
-            <h2 class="mt-4 text-lg font-semibold">Check out <strong>cultivated meat</strong></h2>
+          <div class="flex flex-col items-start text-left scroll-animate">
+            <div class="w-full h-48 bg-[url('/images/upside-article.png')] bg-cover bg-top rounded cursor-pointer zoomable" (click)="navigateToNPR()"></div>
+            <h2 class="mt-4 text-lg font-semibold">Cultivated meat</h2>
             <p class="mt-1 text-sm text-gray-300">
-              At UPSIDE Foods, I work on the US's first slaughter-free animal meat. 
-              It's better for animals, better for Earth, and an incredible assembly of technology.
+              &mdash;or the future of real, slaughter-free meat. For 4+ years I've helped develop the first of its kind.
             </p>
           </div>
           <!-- Research paper -->
-          <div class="flex flex-col items-center text-center scroll-animate">
-            <div class="w-full h-48 bg-[url('/images/fracking-article.png')] bg-cover bg-top rounded"></div>
-            <h2 class="mt-4 text-lg font-semibold">Read my research</h2>
+          <div class="flex flex-col items-start text-left scroll-animate">
+            <div class="w-full h-48 bg-[url('/images/fracking-article.png')] bg-cover bg-top rounded cursor-pointer zoomable" (click)="navigateToFracking()"></div>
+            <h2 class="mt-4 text-lg font-semibold">Public health research</h2>
             <p class="mt-1 text-sm text-gray-300">
-              I built some neat statistical models for my last paper in <em>The Lancet Planetary Health</em>,
-              using a natural experiment across lots of patient healthcare data.
+              has always been important to me. Read my academic papers analyzing public health data.
             </p>
           </div>
         </div>
